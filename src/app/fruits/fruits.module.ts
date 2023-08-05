@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { FruitsRoutingModule } from './fruits-routing.module';
 import { HomeComponent } from './home/home.component';
+import { AddComponent } from './add/add.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    AddComponent
   ],
   imports: [
     CommonModule,
-    FruitsRoutingModule
+    FruitsRoutingModule,
+    FormsModule
   ]
 })
 export class FruitsModule { }
