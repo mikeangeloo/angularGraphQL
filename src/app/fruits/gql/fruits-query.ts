@@ -10,3 +10,14 @@ export const GET_FRUITS = gql`
     }
   }
 `;
+
+export const FRUITS_BYID = gql `
+query($fruitFilter: FruitFilter) {
+  allFruits(filter: $fruitFilter) {
+    id
+    name
+    quantity
+    price
+  }
+}
+`
