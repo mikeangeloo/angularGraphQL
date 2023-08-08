@@ -1,7 +1,9 @@
 # AnguarGrapQl
 
 
-First clone the pr
-
-npx apollo-codegen introspect-schema http://localhost:3000/graphql --output ./src/app/types
-npx apollo-codegen generate **/*.ts --schema ./src/app/types/schema.json --target typescript --output ./src/app/types/operation-result-types.ts
+- First clone the project: https://github.com/mikeangeloo/GCP-GQL and run it.
+- Then clone this project and install dependencies: npm i
+- With the other project running execute this:
+    - npm run getSchemaMetadata
+    - npm run genSchema
+- Then run ng serve enjoy !
