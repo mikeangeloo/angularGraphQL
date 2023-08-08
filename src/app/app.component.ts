@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
       optimisticResponse: {
         __typename: 'Mutation',
         likeTweet: {
-          __typename: 'Tweet',
+          __typename: 'Tweets',
           id,
           likes: likes + 1,
           text

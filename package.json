@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "getSchemaMetadata": "npx apollo-codegen introspect-schema http://localhost:3000/graphql --output ./src/app/types/schema.json",
+    "genSchema": "npx apollo-codegen generate **/*.ts --schema ./src/app/types/schema.json --target typescript --output ./src/app/types/operation-result-types.ts"
   },
   "private": true,
   "dependencies": {

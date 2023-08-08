@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    color: #3F51B5;
+    text-shadow: 0px 4px 5px #d6d6d
+}
+.likes-container {
+    display: flex;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid gray;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    box-shadow: 1px 5px 10px 6px #b0b0b042;
+
+    div {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px;
+        margin: 1rem;
+    }
+
+    .flame-icon {
+        font-size: 3em;
+        color: darkred;
+    }
+
+}
