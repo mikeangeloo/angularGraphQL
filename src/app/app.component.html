@@ -1,8 +1,9 @@
-<nav class="navbar navbar-dark bg-primary">
-  <div class="container-fluid">
-    <div class="navbar-brand">
-      Demo Project
-    </div>
-  </div>
-</nav>
-<router-outlet></router-outlet>
+<h1>Angular Test</h1>
+
+<div *ngFor="let tweet of (tweets | async)?.tweets">
+  {{tweet.text}}
+  <span class="material-icons-outlined" (click)="likeTweet(tweet.id, tweet.likes, tweet.text)">
+  </span>
+
+  {{tweet.likes}}
+</div>
